@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-  let pendoClass = vscode.commands.registerCommand("pendo-paste.pendoClass", function () {
+  let pendoClass = vscode.commands.registerCommand("pendo-helper.pendoClass", function () {
     const editor = vscode.window.activeTextEditor;
     if (!editor) {
       return;
@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
   });
 
-  let pendoIgnore = vscode.commands.registerCommand("pendo-paste.pendoIgnore", function () {
+  let pendoIgnore = vscode.commands.registerCommand("pendo-helper.pendoIgnore", function () {
     const editor = vscode.window.activeTextEditor;
     if (!editor) {
       return;

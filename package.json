@@ -14,11 +14,11 @@
   "contributes": {
     "commands": [
       {
-        "command": "pendo-paste.pendoClass",
+        "command": "pendo-helper.pendoClass",
         "title": "Pendo Class"
       },
       {
-        "command": "pendo-paste.pendoIgnore",
+        "command": "pendo-helper.pendoIgnore",
         "title": "Pendo Ignore"
       }
     ]
