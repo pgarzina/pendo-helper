@@ -1,6 +1,6 @@
 {
-  "name": "pendo-paste",
-  "displayName": "pendo-paste",
+  "name": "pendo-class",
+  "displayName": "Pendo Helper",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -14,12 +14,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "pendo-paste.helloWorld",
-        "title": "Hello World"
+        "command": "pendo-paste.pendoClass",
+        "title": "Pendo Class"
       },
       {
-        "command": "pendo-paste.pendoPaste",
-        "title": "Pendo Paste"
+        "command": "pendo-paste.pendoIgnore",
+        "title": "Pendo Ignore"
       }
     ]
   },
