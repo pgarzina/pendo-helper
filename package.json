@@ -3,12 +3,18 @@
   "displayName": "Pendo Helper",
   "description": "",
   "version": "0.0.1",
+  "publisher": "pgarzina",
   "engines": {
     "vscode": "^1.83.0"
   },
+  "icon": "images/icon.png",
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgarzina/pendo-helper.git"
+  },
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
@@ -24,6 +30,7 @@
     ]
   },
   "scripts": {
+    "package": "vsce package --githubBranch main",
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",

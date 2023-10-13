@@ -1,4 +1,4 @@
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
   let pendoClass = vscode.commands.registerCommand("pendo-helper.pendoClass", function () {
