@@ -14,3 +14,8 @@ You ll get two available commands. First one is Pendo Class which inserts a clas
 Download the pendo-helper.vsix file from the [latest release](https://github.com/pgarzina/pendo-helper/releases/latest). From the Extensions dropdown select Install from VSIX and upload the .vsix extension file.
 
 ![Running the Command](images/install_from_file.gif)
+
+## About
+
+The flow where once in a while when we need to add a Pendo class we have to look up at the documentation and find the site to generate a random string and copy paste it was a bit frustrating.
+This should be a bit easier flow :)
