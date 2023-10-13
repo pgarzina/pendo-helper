@@ -2,7 +2,7 @@
   "name": "pendo-helper",
   "displayName": "Pendo Helper",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "pgarzina",
   "engines": {
     "vscode": "^1.83.0"
