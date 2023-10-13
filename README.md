@@ -11,3 +11,5 @@ You ll get two available commands, Pendo Class that inserts a class with a uniqu
 
 Download the pendo-helper.vsix file from [latest release](https://github.com/pgarzina/pendo-helper/releases/latest)
 From the Extensions drop select Install from VSIX and upload the .vsix extension file.
+
+![Running the Command](images/install_from_file.gif)
