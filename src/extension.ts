@@ -8,11 +8,25 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     const uniqueString = makeid(20);
-    const pendoClass = `pendo-${uniqueString}`;
+    let pendoClass = `pendo-${uniqueString}`;
 
     editor.edit((editBuilder) => {
-      const cursor = editor.selection;
-      editBuilder.insert(cursor.active, pendoClass);
+      const cursorPosition = editor.selection.active;
+
+      const char = cursorPosition.character - 1 < 0 ? 0 : cursorPosition.character - 1;
+      const cursorToLeft = new vscode.Position(cursorPosition.line, char);
+
+      const range = new vscode.Range(cursorPosition, cursorToLeft);
+      const character = editor.document.getText(range);
+
+      const charOnLeftIsWhitespace = character.trim() === "";
+      const charOnLeftIsQuoteMark = character === `"` || character === `'`;
+
+      if (!charOnLeftIsWhitespace && !charOnLeftIsQuoteMark) {
+        pendoClass = ` ${pendoClass}`;
+      }
+
+      editBuilder.insert(cursorPosition, pendoClass);
     });
   });
 
